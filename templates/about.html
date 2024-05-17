@@ -1,0 +1,130 @@
+{%extends 'base.html' %}
+
+{% block title%} About {%endblock title%}
+
+{% block body%}
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us</h1>
+  <p style="font-size: larger;">BagsNepal is a premier e-commerce platform specializing in a diverse range of high-quality bags tailored to meet the needs of fashion enthusiasts and practical users alike. From stylish handbags and durable backpacks to eco-friendly tote bags and travel essentials, BagsNepal offers an extensive collection designed to cater to various tastes and preferences. With a commitment to exceptional customer service, sustainable practices, and competitive pricing, BagsNepal has established itself as a trusted destination for shoppers seeking both functionality and flair in their bag purchases.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/static/Jack.png" alt="Jack" style="width:50%">
+      <div class="container">
+        <h2>Jack Doe</h2>
+        <p class="title">CEO & Founder</p>
+        <p><a href="tel:+9779867723682"><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +977 9800007236</a></p>
+      
+        <p><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: jack789@mail.com </a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/static/Mira.png" alt="Mira" style="width:50%">
+      <div class="container">
+        <h2>Mira Ross</h2>
+        <p class="title">Art Director</p>
+        <p><a href="tel:+9779867723682"><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +977 9867723000</a></p>
+      
+        <p><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mira56@mail.com </a></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="/static/Mike.png" alt="Mike" style="width:60%">
+      <div class="container">
+        <h2>Mike Doe</h2>
+        <p class="title">Designer</p>
+        <p><a href="tel:+9779867723682"><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +977 9867000082</a></p>
+      
+        <p><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mike122@mail.com </a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+{%endblock body%}
